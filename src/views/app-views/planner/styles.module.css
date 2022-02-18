@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.flex {
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.wrapper {
+    /*width: 100%;*/
+    min-height: 800px;
+    background: #e1e1e1;
+    font-size: 16px;
+}
+
+.canvasContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.canvas {
+    position: relative;
+    background: #fafafa;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 700px;
+    align-items: center;
+}
+
+.btn {
+    width: 100px;
+}
+.btn:not(:last-child){
+    margin-bottom: 10px;
+}
+.rotate{
+    margin-bottom: 30px !important;
+}
+.size {
+    width: 30px;
+}
+
+.scale {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.fileLabel{
+    margin-bottom: 10px;
+    font-size: 14px;
+    height: 40px;
+    width: 100px;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s linear;
+}
+.fileLabel:hover{
+    background: #eaeaea;
+}
+.file{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    appearance: none;
+    display: inline-block;
+    min-height: 50px;
+}
+.preview{
+    padding:5px;
+    background:#eee;
+    margin-bottom:5px;
+    width:100px;
+    height: 100px;
+    position: relative;
+}
+.preview img{
+    width:90px;
+    height: auto;
+}
+.previewName{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 12px;
+}
